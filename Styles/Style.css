@@ -1,0 +1,48 @@
+.container{
+    background-color: red;
+    display: flex;
+}
+
+.container2{
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+}
+
+.cell{
+    align-items: center;
+    columns: 1fr 1fr;
+    background-color: red;
+    padding: 12px;
+    margin: 24px;
+    height: 400px;
+    width: auto;
+    border-radius: 12px;
+}
+
+.cell > p{
+    text-align: justify;
+    padding: 12px; 
+    background-color: aliceblue;
+    height: 250px;
+    width: auto; 
+    border-radius: 12px;
+}
+
+.cell > h1{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+img{
+    width: 200px;
+    height: 150px;
+    padding-top: 12px;
+    align-items: center;
+}
+
+#Inicio{
+    height: min-content;
+    margin-left: 1150px;
+    margin-top: 12px;
+}
