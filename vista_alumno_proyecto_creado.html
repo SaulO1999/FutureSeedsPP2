@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Datos del proyecto</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+  <title>Datos del proyecto</title>
 
-    <!-- Add custom CSS here -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-  </head>
+  <!-- Add custom CSS here -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-  <body>
-  
-    <div id="wrapper">
-      
-      <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-          <li class="sidebar-brand"><a href="#">Future Seeds</a></li>
-          <li><a href="#">Perfil</a></li>
-          <li><a href="/mensajeria.html">Mensajeria</a></li>
-          <li><a href="#">Grupo</a></li>
-          <li><a href="/listapatrocinadores.html">Listar patrocinadores</a></li>
-        </ul>
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="#">Future Seeds</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="/mensajeria.html">Mensajeria</a></li>
+        <li><a href="#">Grupo</a></li>
+        <li><a href="/listapatrocinadores.html">Listar patrocinadores</a></li>
+      </ul>
+    </div>
+
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+      <div class="content-header">
+        <h1>
+          <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+          Datos de proyecto
+        </h1>
       </div>
-          
-      <!-- Page content -->
-      <div id="page-content-wrapper">
-        <div class="content-header">
-          <h1>
-            <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
-            Datos de proyecto
-          </h1>
-        </div>
-        <!-- Keep all page content within the page-content inset div! -->
-        <div class="page-content inset">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-8">
-                  <h2>Nombre del proyecto</h2>
-                  <p class="lead">Nombre del proyecto</p>
-                </div>
-                <div class="col-md-4">
-                  <h2>Presupuesto</h2>
-                  <p class="lead">$###.##</p>
-                </div>
+      <!-- Keep all page content within the page-content inset div! -->
+      <div class="page-content inset">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-8">
+                <h2>Nombre del proyecto</h2>
+                <p class="lead">Nombre del proyecto</p>
               </div>
-              <br>
-              <div class="row">
-                <div class="col-md-8">
-                  <h2>Lista de materiales</h2>
-                    <ul class="lead">
-                      <li>Material 1</li>
-                      <li>Material 2</li>
-                      <li>Material 3</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                  <h2>Área de interes</h2>
-                  <p class="lead">Área</p>
-                </div>
+              <div class="col-md-4">
+                <h2>Presupuesto</h2>
+                <p class="lead">$###.##</p>
               </div>
-              <br>
-              <div class="row">
-                <div class="col-md-8">
-                  <h2>Descripción del proyecto</h2>
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam illum accusamus recusandae, similique quos provident facilis eligendi consequatur consectetur.</p>
-                </div>
-              </div>
-              <br>             
             </div>
+            <br>
+            <div class="row">
+              <div class="col-md-8">
+                <h2>Lista de materiales</h2>
+                <ul class="lead">
+                  <li>Material 1</li>
+                  <li>Material 2</li>
+                  <li>Material 3</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h2>Área de interes</h2>
+                <p class="lead">Área</p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-8">
+                <h2>Descripción del proyecto</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam illum accusamus
+                  recusandae, similique quos provident facilis eligendi consequatur consectetur.</p>
+              </div>
+            </div>
+            <br>
           </div>
         </div>
       </div>
-      
     </div>
-	
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
 
-    <!-- Custom JavaScript for the Menu Toggle -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Custom JavaScript for the Menu Toggle -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("active");
     });
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
