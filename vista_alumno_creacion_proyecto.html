@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Crear proyecto</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Add custom CSS here -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="#">Future Seeds</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Mensajeria</a></li>
+        <li><a href="#">Grupo</a></li>
+        <li><a href="/listapatrocinadores.html">Listar patrocinadores</a></li>
+      </ul>
+    </div>
+
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+      <div class="content-header">
+        <h1>
+          <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+          Crear proyecto
+        </h1>
+      </div>
+      <!-- Keep all page content within the page-content inset div! -->
+      <div class="page-content inset">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="input-group">
+                <div class="row">
+                  <div class="col-md-8">
+                    <label class="lead">Nombre del proyecto*</label>
+                    <input type="text" required class="form-control">
+                  </div>
+                  <div class="col-md-4">
+                    <label class="lead">Presupuesto*</label>
+                    <input type="number" min="1" max="2000" required class="form-control">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-8">
+                    <label class="lead">Lista de materiales*</label>
+                    <textarea rows="10" cols="50" required class="form-control"></textarea>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="lead">Área de interes*</label>
+                    <select required class="form-control">
+                      <option value="arqui">Arquitectura</option>
+                      <option value="tecnia">Electrotécnia</option>
+                      <option value="electrica">Electrónica</option>
+                      <option value="info">Informática</option>
+                    </select>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-8">
+                    <label class="lead">Descripción del proyecto*</label>
+                    <textarea rows="5" cols="50" required class="form-control"></textarea>
+                  </div>
+                </div>
+                <br>
+                <input type="submit" value="Publicar proyecto" class="btn btn-default center-block">
+                <br><br>
+                <p>Todos los campos marcados con un * son de carácter <em>obligatorio</em></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Custom JavaScript for the Menu Toggle -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("active");
+    });
+  </script>
+</body>
+
+</html>

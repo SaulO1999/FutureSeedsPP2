@@ -1,104 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Future Seeds - Coordinador</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+  <title>Future Seeds - Coordinador</title>
 
-    <!-- Add custom CSS here -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-  </head>
+  <!-- Add custom CSS here -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-  <body>
-  
-    <div id="wrapper">
-      
-      <!-- Sidebar -->
-      <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-          <li class="sidebar-brand"><a href="home.html">Future Seeds</a></li>
-          <li><a href="vista_coord_perfil.html">Perfil</a></li>
-          <li><a href="vista_coord_mensajeria.html">Mensajeria</a></li>
-          <li><a href="vista_coord_estudiantes.html">Listar estudiantes</a></li>
-          <li><a href="vista_coord_grupos.html">Administrar grupos</a></li>
-        </ul>
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand"><a href="home.html">Future Seeds</a></li>
+        <li><a href="vista_coord_perfil.html">Perfil</a></li>
+        <li><a href="vista_coord_mensajeria.html">Mensajeria</a></li>
+        <li><a href="vista_coord_estudiantes.html">Listar estudiantes</a></li>
+        <li><a href="vista_coord_grupos.html">Administrar grupos</a></li>
+      </ul>
+    </div>
+
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+      <div class="content-header">
+        <h1>
+          <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+          Administración de alumnos
+        </h1>
       </div>
-          
-      <!-- Page content -->
-      <div id="page-content-wrapper">
-        <div class="content-header">
-          <h1>
-            <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
-            Administración de alumnos
-          </h1>
-        </div>
-        <!-- Keep all page content within the page-content inset div! -->
-        <div class="page-content inset">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="lead">Lista de estudiantes supervisados</p>
-              <table class="table table-bordered">
-                <tr>
-                  <th>ID</th>
-                  <th>Nombres</th>
-                  <th>Apellidos</th>
-                  <th>Email</th>
-                  <th>Código Inst.</th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Juan Alejandro</td>
-                  <td>Perez Montoya</td>
-                  <td>jperez145@mail.com</td>
-                  <td>023243</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Monica Elisa</td>
-                  <td>Caceres Hidalgo</td>
-                  <td>mcaceres343@mail.com</td>
-                  <td>846325</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Miriam Ana</td>
-                  <td>Sanchez Aquino</td>
-                  <td>msanchez132@mail.com</td>
-                  <td>438945</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Alex Melvin</td>
-                  <td>Cordova Cuellar</td>
-                  <td>acordova543@mail.com</td>
-                  <td>894355</td>
-                </tr>
-              </table>
-            </div>
+      <!-- Keep all page content within the page-content inset div! -->
+      <div class="page-content inset">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="lead">Lista de estudiantes supervisados</p>
+            <table class="table table-bordered">
+              <tr>
+                <th>ID</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Email</th>
+                <th>Código Inst.</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Juan Alejandro</td>
+                <td>Perez Montoya</td>
+                <td>jperez145@mail.com</td>
+                <td>023243</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Monica Elisa</td>
+                <td>Caceres Hidalgo</td>
+                <td>mcaceres343@mail.com</td>
+                <td>846325</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Miriam Ana</td>
+                <td>Sanchez Aquino</td>
+                <td>msanchez132@mail.com</td>
+                <td>438945</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Alex Melvin</td>
+                <td>Cordova Cuellar</td>
+                <td>acordova543@mail.com</td>
+                <td>894355</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
-      
     </div>
-	
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
 
-    <!-- Custom JavaScript for the Menu Toggle -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Custom JavaScript for the Menu Toggle -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("active");
     });
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
