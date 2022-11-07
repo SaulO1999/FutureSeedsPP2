@@ -2,7 +2,8 @@ CREATE TABLE proyecto (
 	id_proyecto serial PRIMARY KEY,
 	nombre_proyecto varchar(200) NOT NULL,
 	presupuesto integer NOT NULL,
-	materiales varchar(200) NOT NULL
+	materiales varchar(200) NOT NULL,
+	ruta_imagen varchar(255)
 );
 
 CREATE TABLE area_especialidad (
@@ -61,7 +62,8 @@ CREATE TABLE Patrocinador (
 	correo_electronico varchar(255) NOT NULL,
 	nombre_usuario varchar(50) NOT NULL,
 	contrasena varchar(50) NOT NULL,
-	activo boolean NOT NULL
+	activo boolean NOT NULL,
+	ruta_imagen varchar(255)
 );
 
 CREATE TABLE Transaccion (
