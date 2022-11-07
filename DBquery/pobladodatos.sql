@@ -1,23 +1,27 @@
-INSERT INTO proyecto (id_proyecto,nombre_proyecto,presupuesto,materiales)
-VALUES (0,'Maqueta Universidad',99.99,'Papel mache, pegamento, leds, foamy');
+--sin requisitos
 
-INSERT INTO area_especialidad (id_especialidad,nombre_especialidad)
-VALUES (0,'Electrónica');
+INSERT INTO institucion (nombre_institucion,numero_telefono)
+VALUES ('Colegio Ramza Beoulve','4954-7645');
 
-INSERT INTO estudiante (id_estudiante, nombres, apellidos, username, contrasena, estado, email, codigo_institucion)
-VALUES (0,'Juan Alejandro','Pérez Hernández','jperez','toencrypt','1','jperez543@mail.com',409334);
+INSERT INTO area_especialidad (nombre_especialidad)
+VALUES ('Electrónica');
 
-INSERT INTO institucion (id_institucion,nombre_institucion,telefono_contacto)
-VALUES (0,'Colegio Ramza Beoulve','4954-7645');
+--con requisitos
 
-INSERT INTO grupo (id_grupo,nombre_grupo,codigo_especialidad,codigo_proyecto)
-VALUES (0,'torogozes',0,0);
+INSERT INTO coordinador (dui,nombres,apellidos,fecha_nacimiento,contrasena,numero_telefono,codigo_institucion,codigo_especialidad,correo_electronico,nombre_usuario,activo)
+VALUES ('34436584-6','Ernesto Pacheco','Rios Celeste','30/12/1985','toencryptalso','4554-3423',3,1,'erios@mail.com','erios',true);
 
-INSERT INTO coordinador (dui,nombres,apellidos,fecha_nacimiento,contrasena,telefono_contacto,codigo_institucion,codigo_especialidad,email,username,passwd,activo)
-VALUES ('34436584-6','Ernesto Pacheco','Rios Celeste','10/4/1985','toencryptalso','4554-3423',543243,0,'erios@mail.com','erios','otracontra',1);
+INSERT INTO proyecto (nombre_proyecto,presupuesto,materiales,codigo_especialidad)
+VALUES ('Maqueta Universidad',99.99,'Papel mache, pegamento, leds, foamy',1);
 
-INSERT INTO transaccion (id_transaccion,monto,fecha_hora,codigo_institucion,identificacion_patrocinador)
-VALUES (0,55.55,'23/3/2021:10:11:12',344534,0);
+INSERT INTO grupo (nombre_grupo,codigo_especialidad,codigo_proyecto)
+VALUES ('torogozes',1,1);
+
+INSERT INTO patrocinador (dui,nombres,apellidos,fecha_nacimiento,numero_telefono,codigo_especialidad,correo_electronico,nombre_usuario,contrasena,activo,titulo,nombre_publico_empresa,razon_social,nit)
+VALUES ('45894356-4','Ernesto','Caceres','29/11/1987','3432-4544',1,'ecaceres@mail.com','ecaceres','semeolvido',true,'Lic.','Buzos SV','Buzos SV S.A de C.V.','12345678901234');
+
+INSERT INTO estudiante (nombres, apellidos, nombre_usuario, contrasena, estado, correo_electronico, codigo_institucion,codigo_grupo,codigo_encargado)
+VALUES ('Juan Alejandro','Pérez Hernández','jperez','toencrypt',true,'jperez543@mail.com',3,1,'34436584-6');
 
 --machote para generar inserts into:
 /*

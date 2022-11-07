@@ -84,9 +84,11 @@ ALTER TABLE patrocinador ADD COLUMN nombre_publico_empresa varchar(50);
 
 ALTER TABLE patrocinador ADD COLUMN razon_social varchar(50);
 
-ALTER TABLE patrocinador ADD COLUMN NIT varchar(14);
+ALTER TABLE patrocinador ADD COLUMN nit varchar(14);
 
 ALTER TABLE patrocinador drop column sexo;
+
+ALTER TABLE patrocinador drop column empresa;
 
 ALTER TABLE transaccion
 add constraint fk_id_institucion FOREIGN KEY (codigo_institucion) REFERENCES institucion (id_institucion);
