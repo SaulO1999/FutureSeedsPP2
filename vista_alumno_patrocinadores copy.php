@@ -1,3 +1,8 @@
+<?php
+    include("response.php");
+    $newObj = new Patrocinador();
+    $ptr = $newObj->getPatrocinador();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,6 +77,25 @@
               </div>
             </form>
           </div>
+          <table id="employee_grid" class="table" width="100%" cellspacing="0">
+              <thead>
+                  <tr>
+                      <th>Nombre empresa</th>
+                      <th>DUI de encargado</th>
+                      <th>Telefono</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <?php foreach($ptr as $key => $ptr) :?>
+                  <tr>
+                      <td><?php echo $ptr['nombre_publico_empresa'] ?></td>
+                      <td><?php echo $ptr['dui'] ?></td>
+                      <td><?php echo $ptr['numero_telefono'] ?></td>
+                  </tr>
+              <?php endforeach;?>
+              </tbody>
+          </table>
+          <!-- 
           <div class="row" style="padding-top: 2%; padding-bottom: 2%">
             <div class="col-md-3" style="display:block">
               <img src="./Imagenes/Patrocinadores/superSelectos.jpeg" width="100%"
@@ -137,7 +161,7 @@
                 style="display: inherit; margin-left: auto; margin-right:auto">
                 <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Patrocinador X</a></p>
             </div>
-          </div>
+          </div> -->
 
 
           <!-- <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p> -->
