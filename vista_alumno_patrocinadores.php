@@ -34,7 +34,7 @@
         <li><a href="vista_alumno_perfil.html">Perfil</a></li>
         <li><a href="vista_alumno_mensajeria.html">Mensajeria</a></li>
         <li><a href="vista_alumno_grupo.html">Acceso a grupo</a></li>
-        <li><a href="vista_alumno_patrocinadores.html">Lista de patrocinadores</a></li>
+        <li><a href="vista_alumno_patrocinadores.html">Lista patrocinadores</a></li>
       </ul>
     </div>
 
@@ -48,49 +48,24 @@
       </div>
       <!-- Keep all page content within the page-content inset div! -->
       <div class="page-content inset">
-        <div class="row">
-          <div class="col-md-12">
-            <form>
-              <div class="row">
-                <div class="col-md-4">
-                  <p class="lead">Nombre patrocinador: </p>
-                </div>
-                <div class="col-md-8">
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <p class="lead">Área de especialización: </p>
-                </div>
-                <div class="col-md-4">
-                  <select class="form-control">
-                    <option value="arqui">Arquitectura</option>
-                      <option value="tecnia">Electrotécnia</option>
-                      <option value="electrica">Electrónica</option>
-                      <option value="info">Informática</option>
-                  </select>
-                </div>
-                <div class="col-md-4">
-                  <input type="button" value="Buscar" class="btn-default" style="width: 20%">
-                </div>
-              </div>
-            </form>
-          </div>
-          <table id="employee_grid" class="table" width="100%" cellspacing="0">
+          <table id="patrocinadores" class="table" width="100%" cellspacing="0">
               <thead>
                   <tr>
-                      <th>Nombre empresa</th>
-                      <th>DUI de encargado</th>
+                      <th>Empresa</th>
+                      <th>Patrocinador</th>
+                      <th>Correo</th>
                       <th>Telefono</th>
+                      <th>Imagen</th>
                   </tr>
               </thead>
               <tbody>
                   <?php foreach($ptr as $key => $ptr) :?>
                   <tr>
                       <td><?php echo $ptr['nombre_publico_empresa'] ?></td>
-                      <td><?php echo $ptr['dui'] ?></td>
+                      <td><?php echo $ptr['titulo']." ".$ptr['nombres']." ".$ptr['apellidos'] ?></td>
+                      <td><?php echo $ptr['correo_electronico'] ?></td>
                       <td><?php echo $ptr['numero_telefono'] ?></td>
+                      <td><img src="<?php echo $ptr['ruta_imagen'] ?>"alt=""></td>
                   </tr>
               <?php endforeach;?>
               </tbody>
