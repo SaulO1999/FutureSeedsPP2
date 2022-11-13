@@ -35,6 +35,7 @@
         <li><a href="vista_alumno_mensajeria.html">Mensajeria</a></li>
         <li><a href="vista_alumno_grupo.html">Acceso a grupo</a></li>
         <li><a href="vista_alumno_patrocinadores.html">Lista patrocinadores</a></li>
+        <li><a href="vista_alumno_busqueda_patrocinadores.php">Busqueda de patrocinadores</a></li>
       </ul>
     </div>
 
@@ -51,110 +52,26 @@
           <table id="patrocinadores" class="table" width="100%" cellspacing="0">
               <thead>
                   <tr>
-                      <th>Empresa</th>
-                      <th>Patrocinador</th>
-                      <th>Correo</th>
-                      <th>Telefono</th>
-                      <th>Imagen</th>
+                      <th class="lead">Empresa</th>
+                      <th class="lead">Patrocinador</th>
+                      <th class="lead">Correo</th>
+                      <th class="lead">Telefono</th>
+                      <th class="lead">Imagen</th>
                   </tr>
               </thead>
               <tbody>
                   <?php foreach($ptr as $key => $ptr) :?>
+                    <!-- EN TR style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr"<!-->
                   <tr>
-                      <td><?php echo $ptr['nombre_publico_empresa'] ?></td>
-                      <td><?php echo $ptr['titulo']." ".$ptr['nombres']." ".$ptr['apellidos'] ?></td>
-                      <td><?php echo $ptr['correo_electronico'] ?></td>
-                      <td><?php echo $ptr['numero_telefono'] ?></td>
+                      <td class="lead" ><?php echo $ptr['nombre_publico_empresa'] ?></td>
+                      <td class="lead"><?php echo $ptr['titulo']." ".$ptr['nombres']." ".$ptr['apellidos'] ?></td>
+                      <td class="lead"><?php echo $ptr['correo_electronico'] ?></td>
+                      <td class="lead"><?php echo $ptr['numero_telefono'] ?></td>
                       <td><img src="<?php echo $ptr['ruta_imagen'] ?>"alt=""style="width:100px;height:100px"></td>
                   </tr>
               <?php endforeach;?>
               </tbody>
           </table>
-          <!-- 
-          <div class="row" style="padding-top: 2%; padding-bottom: 2%">
-            <div class="col-md-3" style="display:block">
-              <img src="./Imagenes/Patrocinadores/superSelectos.jpeg" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Super selectos</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/diseñoDibujo.png" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Diseño</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/farmaciasSanNicolas.png" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Farmacia San Nicolás</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/alcaldiaAntiguoCuscatlan.jpg" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: 50%;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Alcaldía de Antiguo Cuscatlán</a></p>
-            </div>
-          </div>
-          <div class="row" style="padding-top: 2%; padding-bottom: 2%">
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/alcaldiaSanSalvador.jpg" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Alcaldía de San Salvador</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/despensaDonJuan.png" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">La despensa de Don Juan</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/despensaFamiliar.png" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Despensa Familiar</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/panSinai.png" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Pan Sinaí</a></p>
-            </div>
-          </div>
-          <div class="row" style="padding-top: 2%; padding-bottom: 2%">
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/libreriaIberica.png" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Librería La Iberica</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/grupoRoble.png" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: 50%;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Grupo Roble</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/Patrocinadores/construMarket.png" width="100%"
-                style="display: inherit; margin-left: auto; margin-right:auto; max-width: fit-content;">
-              <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">ConstruMarket</a></p>
-            </div>
-            <div class="col-md-3" style="display:block;">
-              <img src="./Imagenes/fotoperfil.png" width="45%"
-                style="display: inherit; margin-left: auto; margin-right:auto">
-                <p style="text-align: center;" class="lead"><a href="vista_patrocinador_perfil.html">Patrocinador X</a></p>
-            </div>
-          </div> -->
-
-
-          <!-- <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p> -->
-          <!-- <div class="col-md-6">
-              <p class="well">The template still uses the default Bootstrap rows and columns.</p>
-            </div>
-            <div class="col-md-6">
-              <p class="well">But the full-width layout means that you wont be using containers.</p>
-            </div>
-            <div class="col-md-2">
-              <p class="well">Three Column Example</p>
-            </div>
-            <div class="col-md-4">
-              <p class="well">Three Column Example</p>
-            </div>
-            <div class="col-md-4">
-              <p class="well">You get the idea! Do whatever you want in the page content area!</p>
-            </div> -->
         </div>
       </div>
     </div>
