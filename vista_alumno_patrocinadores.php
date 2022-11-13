@@ -34,8 +34,7 @@
         <li><a href="vista_alumno_perfil.html">Perfil</a></li>
         <li><a href="vista_alumno_mensajeria.html">Mensajeria</a></li>
         <li><a href="vista_alumno_grupo.html">Acceso a grupo</a></li>
-        <li><a href="vista_alumno_patrocinadores.html">Lista patrocinadores</a></li>
-        <li><a href="vista_alumno_busqueda_patrocinadores.php">Busqueda de patrocinadores</a></li>
+        <li><a href="vista_alumno_busqueda_patrocinadores.php">Lista de patrocinadores</a></li>
       </ul>
     </div>
 
