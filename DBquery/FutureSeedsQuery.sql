@@ -129,3 +129,5 @@ ALTER TABLE proyecto
 add constraint fk_area_especialidad FOREIGN KEY (codigo_especialidad) REFERENCES area_especialidad (id_especialidad);
 
 ALTER TABLE patrocinador drop constraint fk_id_especialidad;
+
+ALTER TABLE patrocinador ADD COLUMN ruta_imagen varchar(255);

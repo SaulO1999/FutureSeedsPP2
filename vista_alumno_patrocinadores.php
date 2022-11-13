@@ -65,7 +65,7 @@
                       <td><?php echo $ptr['titulo']." ".$ptr['nombres']." ".$ptr['apellidos'] ?></td>
                       <td><?php echo $ptr['correo_electronico'] ?></td>
                       <td><?php echo $ptr['numero_telefono'] ?></td>
-                      <td><img src="<?php echo $ptr['ruta_imagen'] ?>"alt=""></td>
+                      <td><img src="<?php echo $ptr['ruta_imagen'] ?>"alt=""style="width:100px;height:100px"></td>
                   </tr>
               <?php endforeach;?>
               </tbody>

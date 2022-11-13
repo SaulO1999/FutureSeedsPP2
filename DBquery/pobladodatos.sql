@@ -23,6 +23,11 @@ VALUES ('45894356-4','Ernesto','Caceres','29/11/1987','3432-4544',1,'ecaceres@ma
 INSERT INTO estudiante (nombres, apellidos, nombre_usuario, contrasena, estado, correo_electronico, codigo_institucion,codigo_grupo,codigo_encargado)
 VALUES ('Juan Alejandro','Pérez Hernández','jperez','toencrypt',true,'jperez543@mail.com',3,1,'34436584-6');
 
+UPDATE patrocinador
+SET ruta_imagen='Imagenes/Patrocinadores/construMarket.png'
+WHERE patrocinador.dui='45894356-4'
+
+
 --machote para generar inserts into:
 /*
 INSERT INTO table_name ()
