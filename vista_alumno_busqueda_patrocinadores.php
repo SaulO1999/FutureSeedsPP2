@@ -30,7 +30,7 @@
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a href="home.html">Future Seeds</a></li>
+        <li class="sidebar-brand"><a href="index.php">Future Seeds</a></li>
         <li><a href="vista_alumno_perfil.html">Perfil</a></li>
         <li><a href="vista_alumno_mensajeria.html">Mensajeria</a></li>
         <li><a href="vista_alumno_grupo.html">Acceso a grupo</a></li>
@@ -80,9 +80,11 @@
           <table id="employee_grid" class="table" width="100%" cellspacing="0">
               <thead>
                   <tr>
-                      <th>Nombre empresa</th>
-                      <th>DUI de encargado</th>
-                      <th>Telefono</th>
+                    <th class="lead">Empresa</th>
+                    <th class="lead">Patrocinador</th>
+                    <th class="lead">Correo</th>
+                    <th class="lead">Telefono</th>
+                    <th class="lead">Imagen</th>
                   </tr>
               </thead>
               <tbody>
@@ -91,9 +93,12 @@
                 if(isset($ptr)){
                   foreach($ptr as $key => $ptr){ ?>
                     <tr>
-                      <td><?php echo $ptr['nombre_publico_empresa'] ?></td>
-                      <td><?php echo $ptr['dui'] ?></td>
-                      <td><?php echo $ptr['numero_telefono'] ?></td>
+                      <td class="lead"><?php echo $ptr['nombre_publico_empresa'] ?></td>
+                      <td class="lead"><?php echo $ptr['titulo']." ".$ptr['nombres']." ".$ptr['apellidos'] ?></td>
+                      <td class="lead"><a href="mailto:<?php echo $ptr['correo_electronico']?>?subject=Solicitud de apoyo a proyecto estudiantil">
+                        <?php echo $ptr['correo_electronico'] ?></td>
+                      <td class="lead"><?php echo $ptr['numero_telefono'] ?></td>
+                      <td><img src="<?php echo $ptr['ruta_imagen'] ?>"alt=""style="width:100px;height:100px"></td>
                     </tr>
                     <?php 
                   }
