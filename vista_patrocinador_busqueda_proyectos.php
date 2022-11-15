@@ -31,10 +31,9 @@
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand"><a href="index.php">Future Seeds</a></li>
-        <li><a href="vista_alumno_perfil.html">Perfil</a></li>
-        <li><a href="vista_alumno_mensajeria.html">Mensajeria</a></li>
-        <li><a href="vista_alumno_grupo.html">Acceso a grupo</a></li>
-        <li><a href="vista_alumno_busqueda_patrocinadores.php">Lista de patrocinadores</a></li>
+        <li><a href="vista_patrocinador_perfil.html">Perfil</a></li>
+        <li><a href="vista_patrocinador_mensajeria.html">Mensajeria</a></li>
+        <li><a href="vista_patrocinador_busqueda_proyectos.php">Lista de patrocinadores</a></li>
       </ul>
     </div>
 
