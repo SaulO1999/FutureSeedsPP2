@@ -15,7 +15,8 @@
             <li><a class="active" href="#top">Home</a></li>
             <li><a href="#m&v">Mision y Vision</a></li>
             <li><a href="#footer">Contactos</a></li>
-            <li><a href="vista_alumno_bienvenida.html">Ingresar</a></li>
+            <li><a href="vista_alumno_bienvenida.html">Portal de alumnos</a></li>
+            <li><a href="vista_patrocinador_bienvenida.html">Portal de patrocinadores</a></li>
         </ul>
     </div>
     <div>

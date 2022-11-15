@@ -1,6 +1,6 @@
 <?php
     include("response.php");
-    $newObj = new Patrocinador();
+    $newObj = new Proyecto();
     $search = "";
 ?>
 <!DOCTYPE html>
@@ -43,7 +43,7 @@
       <div class="content-header">
         <h1>
           <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
-          Patrocinadores
+          Proyectos
         </h1>
       </div>
       <!-- Keep all page content within the page-content inset div! -->
@@ -53,7 +53,7 @@
             <form action="" method="GET">
               <div class="row">
                 <div class="col-md-4">
-                  <p class="lead">Nombre patrocinador: </p>
+                  <p class="lead">Nombre de proyecto: </p>
                 </div>
                 <div class="col-md-8">
                   <input type="text" name="search" class="form-control" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}else{$_GET['search']="";} ?>" placeholder="Parametros de busqueda">
@@ -80,25 +80,22 @@
           <table id="employee_grid" class="table" width="100%" cellspacing="0">
               <thead>
                   <tr>
-                    <th class="lead">Empresa</th>
-                    <th class="lead">Patrocinador</th>
-                    <th class="lead">Correo</th>
-                    <th class="lead">Telefono</th>
+                    <th class="lead">Nombre</th>
+                    <th class="lead">Presupuesto</th>
+                    <th class="lead">Materiales</th>
                     <th class="lead">Imagen</th>
                   </tr>
               </thead>
               <tbody>
                 <?php
-                $ptr = $newObj->filterPatrocinador($_GET['search']);
-                if(isset($ptr)){
-                  foreach($ptr as $key => $ptr){ ?>
+                $pyt = $newObj->filterProyecto($_GET['search']);
+                if(isset($pyt)){
+                  foreach($pyt as $key => $pyt){ ?>
                     <tr>
-                      <td class="lead"><?php echo $ptr['nombre_publico_empresa'] ?></td>
-                      <td class="lead"><?php echo $ptr['titulo']." ".$ptr['nombres']." ".$ptr['apellidos'] ?></td>
-                      <td class="lead"><a href="mailto:<?php echo $ptr['correo_electronico']?>?subject=Solicitud de apoyo a proyecto estudiantil">
-                        <?php echo $ptr['correo_electronico'] ?></td>
-                      <td class="lead"><?php echo $ptr['numero_telefono'] ?></td>
-                      <td><img src="<?php echo $ptr['ruta_imagen'] ?>"alt=""style="width:100px;height:100px"></td>
+                      <td class="lead"><?php echo $pyt['nombre_proyecto'] ?></td>
+                      <td class="lead"><?php echo "$".$pyt['presupuesto'] ?></td>
+                      <td class="lead"><?php echo $pyt['materiales'] ?></td>
+                      <td><img src="<?php echo $pyt['ruta_imagen'] ?>"alt=""style="width:100px;height:100px"></td>
                     </tr>
                     <?php 
                   }
