@@ -58,19 +58,6 @@
                 <div class="col-md-8">
                   <input type="text" name="search" class="form-control" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}else{$_GET['search']="";} ?>" placeholder="Parametros de busqueda">
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <p class="lead">Área de especialización: </p>
-                </div>
-                <div class="col-md-4">
-                  <select class="form-control">
-                    <option value="arqui">Arquitectura</option>
-                      <option value="tecnia">Electrotécnia</option>
-                      <option value="electrica">Electrónica</option>
-                      <option value="info">Informática</option>
-                  </select>
-                </div>
                 <div class="col-md-4">
                   <input type="submit" value="Buscar" class="btn-default" style="width: 20%">
                 </div>
