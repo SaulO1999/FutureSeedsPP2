@@ -23,12 +23,12 @@ VALUES ('45894356-4','Ernesto','Caceres','29/11/1987','3432-4544',1,'ecaceres@ma
 INSERT INTO estudiante (nombres, apellidos, nombre_usuario, contrasena, estado, correo_electronico, codigo_institucion,codigo_grupo,codigo_encargado)
 VALUES ('Juan Alejandro','Pérez Hernández','jperez','toencrypt',true,'jperez543@mail.com',3,1,'34436584-6');
 
+INSERT INTO patrocinador (dui,nombres,apellidos,fecha_nacimiento,numero_telefono,codigo_especialidad,correo_electronico,nombre_usuario,contrasena,activo,titulo,nombre_publico_empresa,razon_social,nit)
+VALUES ('45594222-1','Javier','Casas','09/05/1988','3758-4236',1,'jcasas@mail.com','jcasas','1234',true,'Lic.','Kaiser SV','Kaiser SV S.A de C.V.','12345648951224');
+
 UPDATE patrocinador
 SET ruta_imagen='Imagenes/Patrocinadores/construMarket.png'
 WHERE patrocinador.dui='45894356-4'
-
-INSERT INTO patrocinador (dui,nombres,apellidos,fecha_nacimiento,numero_telefono,codigo_especialidad,correo_electronico,nombre_usuario,contrasena,activo,titulo,nombre_publico_empresa,razon_social,nit)
-VALUES ('45594222-1','Javier','Casas','09/05/1988','3758-4236',1,'jcasas@mail.com','jcasas','1234',true,'Lic.','Kaiser SV','Kaiser SV S.A de C.V.','12345648951224');
 
 --machote para generar inserts into:
 /*
