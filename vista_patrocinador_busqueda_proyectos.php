@@ -82,7 +82,7 @@
                       <td class="lead"><?php echo "$".$pyt['presupuesto'] ?></td>
                       <td class="lead"><?php echo $pyt['materiales'] ?></td>
                       <td class="lead"><a href="mailto:erios@mail.com?subject=Solicitud de apoyo a proyecto estudiantil">
-                        <?php echo $ptr['erios@mail.com'] ?></td>
+                      erios@mail.com</td>
                     </tr>
                     <?php 
                   }
