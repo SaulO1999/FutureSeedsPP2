@@ -69,7 +69,7 @@
                     <th class="lead">Nombre</th>
                     <th class="lead">Presupuesto</th>
                     <th class="lead">Materiales</th>
-                    <th class="lead">Imagen</th>
+                    <th class="lead">Correo de contacto</th>
                   </tr>
               </thead>
               <tbody>
@@ -81,7 +81,8 @@
                       <td class="lead"><?php echo $pyt['nombre_proyecto'] ?></td>
                       <td class="lead"><?php echo "$".$pyt['presupuesto'] ?></td>
                       <td class="lead"><?php echo $pyt['materiales'] ?></td>
-                      <td><img src="<?php echo $pyt['ruta_imagen'] ?>"alt=""style="width:100px;height:100px"></td>
+                      <td class="lead"><a href="mailto:erios@mail.com?subject=Solicitud de apoyo a proyecto estudiantil">
+                        <?php echo $ptr['correo_electronico'] ?></td>
                     </tr>
                     <?php 
                   }
