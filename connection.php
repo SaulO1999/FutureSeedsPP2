@@ -6,7 +6,7 @@ Class dbObj{
 		$this->servername = "localhost";
 		$this->username = "postgres";
 		$this->password = "root";
-		$this->dbname = "FutureSeedsDB";
+		$this->dbname = "futureseedsdb";
 		$this->port = "5432";
 		$this->conn;
 	}
