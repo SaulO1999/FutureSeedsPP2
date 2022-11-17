@@ -13,3 +13,11 @@ WHERE patrocinador.dui='87865453-2';
 UPDATE patrocinador
 SET ruta_imagen='Imagenes/Patrocinadores/alcaldiaSanSalvador.jpg'
 WHERE patrocinador.dui='45668656-9';
+
+UPDATE patrocinador
+SET ruta_imagen='Imagenes/Patrocinadores/buzo.png'
+WHERE patrocinador.dui='45894356-4';
+
+UPDATE patrocinador
+SET ruta_imagen='Imagenes/Patrocinadores/kaiser.png'
+WHERE patrocinador.dui='45594222-1';
