@@ -1,0 +1,25 @@
+.container{
+    display:grid;
+    gap:15px;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    
+}
+
+.cell:hover + .p-none{
+    background-color: aliceblue;
+    display: block;
+    padding: 12px;
+}
+
+.p-none{
+    display: none;
+    font-size: 22px;
+}
+
+.container::before{
+    display: none;
+}
+
+
+

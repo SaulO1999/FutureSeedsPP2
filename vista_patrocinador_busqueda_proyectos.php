@@ -33,7 +33,7 @@
         <li class="sidebar-brand"><a href="index.php">Future Seeds</a></li>
         <li><a href="vista_patrocinador_perfil.html">Perfil</a></li>
         <li><a href="vista_patrocinador_mensajeria.html">Mensajeria</a></li>
-        <li><a href="vista_patrocinador_busqueda_proyectos.php">Lista de patrocinadores</a></li>
+        <li><a href="vista_patrocinador_busqueda_proyectos.php">Lista de proyectos</a></li>
       </ul>
     </div>
 
